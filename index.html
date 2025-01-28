@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-service-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>New E-Account Registration Form</title>
+
+</head>
+<body>
+
+	<div class="d-flex justify-content-center">
+
+		<div class="Container">
+			<div class="width-25%"><img src="images/logo.jpg" class="logo-img"></div>
+
+			<h2>New E-Account Registration Form (Year-2025)</h2>
+			<div class="form-container">
+			
+
+			<form method="post" action="https://script.google.com/macros/s/AKfycbxegvjWwm3ExEuKL7U6Cnpk-fFdkg_w8-3-QruHxKKfIrqGuSzDDnjgqbBbne1bUkh4/exec" name="contactform" id="contactform">
+
+				
+				<h3>Please Carefully Submit Applicant Details</h3>
+				<h3>..................................................................................................................................................................</h3>
+				<input type="text" class="form-control" placeholder="Applicant Full Name" name="Applicant Full Name" id="Applicant Full Name"/>
+				<span>
+				<input type="text" class="form-control" placeholder="Applicant Father's Name" name="Applicant Father's Name" id="Applicant Father's Name"/>
+
+				<h3>..................................................................................................................................................................</h3>
+				<input type="text" class="form-control" placeholder="Applicant Mother's Name" name="Applicant Mother's Name" id="Applicant Mother's Name"/>
+				<span>
+				<input type="text" class="form-control" placeholder="Gender" name="Gender" id="Gender"/>
+
+				<h3>..................................................................................................................................................................</h3>
+				<input type="text" class="form-control" placeholder="Date of Birth" name="Date of Birth" id="Date of Birth"/>
+				<span>
+				<input type="number" class="form-control" placeholder="Adhar Number " name="Adhar Number" id="Adhar Number"/>
+				
+				<h3>..................................................................................................................................................................</h3>
+
+				<input type="text" class="form-control" placeholder="Full Address" name="Full Address" id="Full Address"/>
+				<span>
+				<input type="text" class="form-control" placeholder="Mobile Number" name="Mobile Number" id="Mobile Number"/>
+				
+				<h3>..................................................................................................................................................................</h3>
+
+				<input type="text" class="form-control" placeholder="Referance ID" name="Referance ID" id="Referance ID"/>
+				<span>
+				<input type="text" class="form-control" placeholder="Apply Date" name="Apply Date" id="Apply Date"/>
+				
+				<h3>..................................................................................................................................................................</h3>
+
+
+	
+				
+				
+				<input type="submit" value="Submit" class="button button-primary" colour=blue id="submit" />
+				</span>
+			</form>	
+		</div>	
+	</div>
+</div>
+
+<script>
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbxegvjWwm3ExEuKL7U6Cnpk-fFdkg_w8-3-QruHxKKfIrqGuSzDDnjgqbBbne1bUkh4/exec'
+			const form = document.forms['contactform']
+		  
+			form.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => {  window.location.reload(); })
+				.catch(error => console.error('Error!', error.message))
+			})
+		  </script>
+
+</body>
+</html>

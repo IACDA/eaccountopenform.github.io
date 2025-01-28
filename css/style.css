@@ -1,0 +1,78 @@
+*
+{
+	padding:0px;
+ 	margin:0px;
+ 	box-sizing: border-box;	
+}
+
+body, html{
+	font-family:Roboto,sans-serif,arial;
+	background: lavender;
+	font-size: 14px;
+
+}
+
+.Container
+{
+	background: white;
+	height: 680px;
+	width: 1300px;
+	padding: 40px;
+	margin: 50px auto 0;
+	border-top: 5px solid blue;
+	box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.5);
+	
+}
+
+.Container h2
+{
+	font-size: 24px;
+	line-height: 24px;
+	padding: 30px;
+	text-align: center;
+	
+}
+
+.form-container
+{	
+	width: 100%;
+	position: relative;
+	margin: 20px auto;
+	text-align: center;
+	height: auto;
+	
+}
+
+.form-control
+{
+	height: 35px;
+	width: 45%;
+	padding: 0px 15px;
+	
+}
+
+.form-control:hover, .name:hover
+{
+	background: #fafafa;
+}
+
+.form-container span
+{
+	margin-left: 35px;
+}
+
+.button
+{
+	background-color: blue;
+	color: white;
+	height: 35px;
+	line-height: 35px;
+	width: 35%;
+	
+}
+
+.button:hover
+{
+	background: green;
+}
+
